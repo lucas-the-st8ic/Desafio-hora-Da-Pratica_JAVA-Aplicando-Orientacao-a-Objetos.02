@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Scanner input = new Scanner(System.in);
 
         Conta_Bancaria contaBancoBRA = new Conta_Bancaria();
@@ -15,10 +15,12 @@ public class Main {
         System.out.println("Número da conta: " +contaBancoBRA.getNumeroDaConta());
         System.out.println("Saldo: R$" +contaBancoBRA.getSaldoDaConta());
 
-
-
-
-
+        System.out.println("===============================\n");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
         System.out.println("Insira seu nome: ");
         String nome = input.nextLine();
@@ -34,7 +36,33 @@ public class Main {
         pessoa1.verificarIdade();
 
         System.out.println("===============================\n");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
         Produtos produtoCodigo001 = new Produtos("IPhone", 14000.0);
+
+        System.out.println("Nome do Produto: " +produtoCodigo001.getNomeDoProduto());
+        System.out.println("Preço do Produto: R$" +produtoCodigo001.getPrecoDoProduto());
+
+        produtoCodigo001.aplicarDesconto(50);
+
+        System.out.println("Preço final do Produto com desconto: " +produtoCodigo001.getPrecoDoProduto());
+
+        System.out.println("===============================\n");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        Alunos Lucas = new Alunos("Lucas Silva",8.5,9.2,5.0);
+        Alunos Anna = new Alunos("Anna Silva",8.5,9.2,5.0);
+
+        Lucas.calcularmedia();
+        Anna.calcularmedia();
+
     }
 }
