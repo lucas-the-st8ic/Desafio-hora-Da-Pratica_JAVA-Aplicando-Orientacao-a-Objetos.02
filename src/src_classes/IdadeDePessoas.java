@@ -1,3 +1,5 @@
+package src_classes;
+
 public class IdadeDePessoas {
     private String nome;
     private int idade;

@@ -1,3 +1,8 @@
+import src_classes.Alunos;
+import src_classes.Conta_Bancaria;
+import src_classes.IdadeDePessoas;
+import src_classes.Produtos;
+
 import java.util.Scanner;
 
 public class Main {

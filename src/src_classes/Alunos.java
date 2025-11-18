@@ -1,3 +1,5 @@
+package src_classes;
+
 public class Alunos {
     private String nomeDoAluno;
     private double nota_1;

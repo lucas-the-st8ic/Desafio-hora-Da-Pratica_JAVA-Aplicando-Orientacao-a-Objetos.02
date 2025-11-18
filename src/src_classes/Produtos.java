@@ -1,3 +1,5 @@
+package src_classes;
+
 import java.util.Scanner;
 
 public class Produtos {

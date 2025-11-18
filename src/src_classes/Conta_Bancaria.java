@@ -1,3 +1,5 @@
+package src_classes;
+
 public class Conta_Bancaria {
     public String titularDaConta;
     private int numeroDaConta;
