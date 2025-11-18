@@ -1,7 +1,4 @@
-import src_classes.Alunos;
-import src_classes.Conta_Bancaria;
-import src_classes.IdadeDePessoas;
-import src_classes.Produtos;
+import src_classes.*;
 
 import java.util.Scanner;
 
@@ -64,10 +61,28 @@ public class Main {
         }
 
         Alunos Lucas = new Alunos("Lucas Silva",8.5,9.2,5.0);
-        Alunos Anna = new Alunos("Anna Silva",8.5,9.2,5.0);
+        Alunos Anna = new Alunos("Anna Silva",10,9.2,8.5);
 
         Lucas.calcularmedia();
         Anna.calcularmedia();
 
+        System.out.println("===============================\n");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        Livros livro_cod001 = new Livros();
+
+        livro_cod001.setNomeDoLivro("Diário Estóico");
+        livro_cod001.setNomeDoAutor("Ryan Holiday e Stephen Hanselman");
+
+        Livros livro_cod002 = new Livros();
+        livro_cod002.setNomeDoLivro("Lógica de Programação e Algoritmos com JavaScript");
+        livro_cod002.setNomeDoAutor("Edécio Fernando Lepsen");
+
+        livro_cod001.descricaoDoLivro();
+        livro_cod002.descricaoDoLivro();
     }
 }
