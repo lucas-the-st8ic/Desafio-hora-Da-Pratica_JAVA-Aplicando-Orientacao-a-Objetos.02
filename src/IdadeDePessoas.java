@@ -22,9 +22,9 @@ public class IdadeDePessoas {
         int maiorIdade = 18;
 
         if (idade >= maiorIdade) {
-            System.out.println("O usuário é maior de idade!");
-        } else if (idade < maiorIdade) {
-            System.out.println("O usuário é menor de idade!");
+            System.out.println("O " +nome+ " é maior de idade!");
+        } else {
+            System.out.println("O " +nome+ " é menor de idade!");
         }
     }
 }
